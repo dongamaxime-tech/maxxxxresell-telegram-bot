@@ -1,0 +1,17 @@
+services:
+  - type: worker
+    name: maxxxxresell-telegram-bot
+    env: node
+    buildCommand: npm install
+    startCommand: node bot.js
+    envVars:
+      - key: BOT_TOKEN
+        value: 8187138766:AAEZnwyND_QQmYTwskGYK5eu5dSdmcTix_k
+      - key: JSONBIN_ID
+        value: 69ff9ea1c0954111d8fde588
+      - key: JSONBIN_KEY
+        value: "$2a$10$hVeLbATRHcoLHdVB/JAYiOpid7Oy.og8ly7077j.bl7tVJz3wyk8S"
+      - key: ADMIN_PASSWORD
+        value: Maxdonga!
+      - key: CHARLES_PASSWORD
+        value: charlou
